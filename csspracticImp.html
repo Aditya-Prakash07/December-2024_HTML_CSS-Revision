@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;;
+        }
+        .container{
+            margin: auto;
+            height: 50px;
+            width: 98%;
+            border: 2px solid tomato;
+            justify-content: space-between;
+            display: flex;
+            
+        }
+        .bahu{
+            margin: 5px;
+            height: 35px;
+            width: 80px;
+            text-align: center;
+            padding:999;
+            border: 2px solid black;
+        }
+        .about{
+            margin: 5px;
+            height: 35px;
+            width: 80px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        .home{
+            margin: 5px;
+            height: 35px;
+            width: 80px;
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bahu">
+            Bahu
+        </div>
+        <div class="about">
+            About
+
+        </div>
+        <div class="home">
+            Home
+        </div>
+    </div>
+<br>
+<hr>
+<br>
+    <dl>
+        <dt>Bahu</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit sequi quidem est, reprehenderit velit non minima? Iure, esse id magni minus, doloribus et voluptates nobis modi aperiam officia laboriosam.</dd>
+        <dt>Kashi</dt>
+        <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, tenetur magnam? Alias libero laboriosam dolores ipsa officiis reprehenderit, quibusdam praesentium, id natus voluptatum possimus incidunt fugit. Molestias, aut. Deleniti, harum?</dd>
+    </dl>
+<br>
+<hr>
+<br>
+<table>
+    <tr>
+        <th>first</th>
+        <th>second</th>
+        <th>third</th>
+        <th>fourth</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+</table>
+
+
+<form action="/submit" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

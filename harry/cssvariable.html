@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        :root{
+            --color: rgb(23, 83, 224);
+            --seccolor: rgb(125, 161, 245);
+            --width: 50%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            /* background-color: lightseagreen; */
+            background-color: var(--color, red);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style-type: none;
+            padding: 20px;
+            border: 1px solid var(--seccolor);
+        }
+        ul li:first-child{
+            /* here i have overrided the global variable color so for this scope only color of color will be changed */
+            --color: tomato;
+            /* if the variable color is not found we can assign a fall back variable color blue so that my website works well */
+            background-color: var(--color, blue);
+            border: 2px solid var(--seccolor);
+        }
+        .container{
+            /* background-color: rgb(114, 219, 214); */
+            background-color: var(--seccolor);
+            width: var(--width);
+        }
+    </Style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <br>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae sit nostrum non vel quidem odio reprehenderit est. Illo possimus similique rerum. Tempora optio quisquam quod minima consequuntur, incidunt sed soluta numquam! Porro, facilis eligendi! Odio sit distinctio officiis quidem voluptas vitae molestias tempore nam?
+    </div>
+</body>
+</html>

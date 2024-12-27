@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            /* width: 1440px; */
+            width: 80vw;
+            height: 10vh;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            margin: 5px auto;
+        }
+        .container{
+            border: 2px solid black;
+            /* width: 1440px; */
+            width: 80vw;
+            height: 80vh;
+            font-size: 18px;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            margin: 23px auto;
+        }
+        .container p{
+            /* em is used to in the case of font size it works in respect of the parent here parent font size is set to 18px if make this font-size 1.5em the font size will become 1.5 times that of the parent that is 27px . rem taks in the term of root element that is html  */
+            /* font-size: 2em; */
+            font-size: 2rem;
+            /* in percentate widh and height means w.r.t the parent like here paragaraph has 50% of the width of its parent that is 50% of container */
+            width: 50%;
+        }
+        html{
+            font-size: 12px;
+        }
+        .myCont{
+            /* vmin means minumum length of viewboard if it is desktop then its height in case of mobile its width
+            and vmax is vice-versa of it */
+            width: 20vmin;
+            height: 80vmax;
+            border: 2px solid black;
+            /* width: 1440px; */
+            width: 80vw;
+            height: 80vh;
+            font-size: 16px;
+            box-sizing: border-box;
+            margin: 23px auto;
+            min-height: 80vh;
+            background-color: tomato;
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+        .footer{
+            width: 90vw;
+            background-color: rgb(61, 114, 109);
+            text-align: center;
+            color: white;
+            margin: auto;
+           
+        }
+        .outline{
+            width: 40px;
+            height: 40px;
+            background-color: rebeccapurple;
+            margin: 24px auto;
+            border: 2px solid rgb(8, 7, 8);
+            outline-offset: 12px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a Box
+    </div>
+    <div class="container">
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, veniam magnam ad architecto, cumque quidem? Vel repellat aut sapiente sint voluptate facilis. Placeat fuga assumenda provident similique deserunt fugiat quaerat quibusdam.
+        </p>
+    </div>
+    <div class="myCont">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At qui repellat distinctio laboriosam amet mollitia sit vero, quasi dolor placeat sed earum vel!
+    </div>
+
+    <div class="outline">
+
+    </div>
+
+    <div class="footer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate similique illum i
+    </div>
+</body>
+</html>

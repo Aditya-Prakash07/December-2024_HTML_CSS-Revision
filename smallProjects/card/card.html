@@ -1,0 +1,190 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color:rgb(221, 218, 218);
+        }
+        .container{
+            width: 364px;
+            margin: 43px auto;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: white;
+            border: 2px solid rgb(210, 204, 204);
+        }
+        img{
+            width:364px ;
+            border-radius: 15px;
+        }
+        .first{
+            display: inline-block;
+            width: 60px;
+            margin: 10px;
+            margin-right: 0px;
+            padding: 2px;
+            text-align: center;
+            border: 1px solid rgb(237, 233, 233);
+            background-color: white;
+            border-radius: 15px;
+        }
+        .secound{
+            display: inline-block;
+            width: 40px;
+            margin: 12px;
+            padding: 2px;
+            text-align: center;
+            border: 1px solid rgb(237, 233, 233);
+            background-color: white;
+            border-radius: 15px;
+        }
+        h2{
+            margin: 24px 10px;
+            
+        }
+        p{
+            margin: 24px 10px;
+        }
+        .read{
+            width: 120px;
+            height: 40px;
+            padding: 9px;
+            color: rgb(29, 154, 232);
+            margin: 24px auto;
+            text-align: center;
+            border-radius: 20px;
+            background-color: rgb(183, 217, 246);
+            box-sizing: border-box;
+
+        }
+        a{
+             background-color: transparent; /* Remove background */
+            text-decoration: none;        /* Optional: remove underline */
+            color: inherit;               /* Optional: inherit text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../../images/img6.jpg" alt="img_chain">
+        <div class="first">Nature</div>
+        <div class="secound">Lake</div>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, fugit dolorem doloremque repellendus est aliquam, hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, earum! ti.</p>
+        <div class="read"><a href="./read.html">Read more</a> </div>
+    </div>
+</body>
+</html> -->
+
+
+
+
+<!-- below code is suggested by chatgpt to make my code responsive 😂 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(221, 218, 218);
+            box-sizing: border-box;
+        }
+        .container {
+            width: 90%; /* Use a percentage for responsiveness */
+            max-width: 400px; /* Set a max width for larger screens */
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 15px;
+            background-color: white;
+            border: 2px solid rgb(210, 204, 204);
+        }
+        img {
+            width: 100%; /* Make the image responsive */
+            border-radius: 15px;
+        }
+        .first, .secound {
+            display: inline-block;
+            width: auto;
+            padding: 5px 10px;
+            text-align: center;
+            border: 1px solid rgb(237, 233, 233);
+            background-color: white;
+            border-radius: 15px;
+            margin: 5px 5px 5px 0;
+        }
+        h2, p {
+            margin: 15px 10px;
+        }
+        .read {
+            display: block;
+            width: fit-content;
+            padding: 10px 20px;
+            color: rgb(25, 94, 214);
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 20px;
+            background-color: rgb(183, 217, 246);
+            text-decoration: none;
+        }
+        a {
+            background-color: transparent;
+            text-decoration: none;
+            color: inherit;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%; /* Adjust for smaller screens */
+            }
+            .first, .secound {
+                font-size: 0.9em; /* Adjust font size */
+            }
+            h2 {
+                font-size: 1.2em; /* Scale down heading size */
+            }
+        }
+        .box{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <img src="../../images/img6.jpg" alt="img_chain">
+            <div class="first">Nature</div>
+            <div class="secound">Lake</div>
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, fugit dolorem doloremque repellendus est aliquam, hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, earum! ti.</p>
+            <a class="read" href="./read.html">Read more</a>
+        </div>
+        <div class="container">
+            <img src="../../images/img6.jpg" alt="img_chain">
+            <div class="first">Nature</div>
+            <div class="secound">Lake</div>
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, fugit dolorem doloremque repellendus est aliquam, hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, earum! ti.</p>
+            <a class="read" href="./read.html">Read more</a>
+        </div>
+        <div class="container">
+            <img src="../../images/img6.jpg" alt="img_chain">
+            <div class="first">Nature</div>
+            <div class="secound">Lake</div>
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, fugit dolorem doloremque repellendus est aliquam, hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, earum! ti.</p>
+            <a class="read" href="./read.html">Read more</a>
+        </div>
+    </div>
+
+</body>
+</html>
