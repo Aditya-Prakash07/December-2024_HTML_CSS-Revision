@@ -52,18 +52,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-Test Across Devices: Use browser developer tools to test responsiveness and tweak as needed.
-Would you like an example of a fully responsive layout?
-
-
-
-
-
-
-
-
-
-
-
-
-ChatGPT can make mistakes. Check important info.
